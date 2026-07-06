@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jtlshopplugin>
+    <Name>TC Bedarfsrechner</Name>
+    <Description><![CDATA[Eigener Bedarfsrechner fuer m2, VPE/Pakete und Verschnitt fuer JTL-Shop 5.]]></Description>
+    <Author>Kemal</Author>
+    <URL>https://www.teamcode.de</URL>
+    <XMLVersion>100</XMLVersion>
+    <MinShopVersion>5.7.1</MinShopVersion>
+    <Version>0.1.0</Version>
+    <PluginID>tc_bedarfsrechner</PluginID>
+    <CreateDate>2026-07-06</CreateDate>
+    <Install>
+        <Adminmenu>
+            <Settingslink sort="1">
+                <Name>Einstellungen</Name>
+                <Setting type="selectbox" initialValue="1" sort="10" conf="Y">
+                    <Name><![CDATA[Plugin aktivieren]]></Name>
+                    <Description><![CDATA[Steuert, ob der TC Bedarfsrechner aktiv ist.]]></Description>
+                    <ValueName>active</ValueName>
+                    <SelectboxOptions>
+                        <Option value="0" sort="0"><![CDATA[Inaktiv]]></Option>
+                        <Option value="1" sort="1"><![CDATA[Aktiv]]></Option>
+                    </SelectboxOptions>
+                </Setting>
+                <Setting type="text" initialValue="#add-to-cart" sort="20" conf="Y">
+                    <Name><![CDATA[Einfuege-Selektor]]></Name>
+                    <Description><![CDATA[CSS-Selektor, an dem der Rechner spaeter eingefuegt wird.]]></Description>
+                    <ValueName>insert_selector</ValueName>
+                </Setting>
+            </Settingslink>
+        </Adminmenu>
+        <Locales>
+            <Variable>
+                <Name>tc_calculator_title</Name>
+                <VariableLocalized iso="GER">TC Bedarfsrechner</VariableLocalized>
+                <VariableLocalized iso="ENG">TC Quantity Calculator</VariableLocalized>
+            </Variable>
+            <Variable>
+                <Name>tc_calculator_loaded</Name>
+                <VariableLocalized iso="GER">TC Bedarfsrechner erfolgreich geladen.</VariableLocalized>
+                <VariableLocalized iso="ENG">TC calculator loaded successfully.</VariableLocalized>
+            </Variable>
+        </Locales>
+    </Install>
+</jtlshopplugin>

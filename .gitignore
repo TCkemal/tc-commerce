@@ -1,0 +1,14 @@
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Build / temp
+*.zip
+*.log
+tmp/
+cache/
+
+# Secrets
+.env
