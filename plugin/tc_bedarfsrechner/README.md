@@ -1,10 +1,7 @@
 # TC Bedarfsrechner
 
-Eigenes JTL-Shop-5-Plugin fuer Bedarfsberechnung in m2 und VPE/Paketen.
+## Version 0.2.0
 
-## Version 0.1.0
-
-- Installierbares Plugin-Grundgeruest
-- Backend-Einstellungen
-- Sprachvariablen
-- Noch keine Frontend-Funktion
+- Frontend-Ausgabe vorbereitet
+- Template, CSS und JavaScript hinzugefuegt
+- Erste Ausgabe auf Artikeldetailseite

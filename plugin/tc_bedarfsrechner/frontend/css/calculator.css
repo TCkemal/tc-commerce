@@ -1,0 +1,24 @@
+.tc-calculator {
+    margin: 1rem 0;
+}
+
+.tc-calculator__box {
+    border: 1px solid #d7d7d7;
+    border-radius: .5rem;
+    padding: 1rem;
+    background: #f8f9fa;
+}
+
+.tc-calculator__title {
+    font-weight: 700;
+    margin-bottom: .25rem;
+}
+
+.tc-calculator__text {
+    margin-bottom: .25rem;
+}
+
+.tc-calculator__version {
+    font-size: .875rem;
+    opacity: .75;
+}
