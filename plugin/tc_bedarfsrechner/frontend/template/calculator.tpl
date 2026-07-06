@@ -64,8 +64,9 @@
         </table>
 
         <button
-            id="tc-calculate"
-            class="btn btn-primary w-100">
+    		type="button"
+    		id="tc-calculate"
+    		class="btn btn-primary w-100">
 
             Berechnen
 
