@@ -6,7 +6,7 @@
     <URL>https://www.teamcode.de</URL>
     <XMLVersion>100</XMLVersion>
     <MinShopVersion>5.7.1</MinShopVersion>
-    <Version>0.2.0</Version>
+    <Version>0.2.1</Version>
     <PluginID>tc_bedarfsrechner</PluginID>
     <CreateDate>2026-07-06</CreateDate>
     <Install>
@@ -21,11 +21,6 @@
                         <Option value="0" sort="0"><![CDATA[Inaktiv]]></Option>
                         <Option value="1" sort="1"><![CDATA[Aktiv]]></Option>
                     </SelectboxOptions>
-                </Setting>
-                <Setting type="text" initialValue="#add-to-cart" sort="20" conf="Y">
-                    <Name><![CDATA[Einfuege-Selektor]]></Name>
-                    <Description><![CDATA[CSS-Selektor, an dem der Rechner spaeter eingefuegt wird.]]></Description>
-                    <ValueName>insert_selector</ValueName>
                 </Setting>
             </Settingslink>
         </Adminmenu>

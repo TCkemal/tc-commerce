@@ -5,7 +5,7 @@ namespace Plugin\tc_bedarfsrechner;
 use JTL\Events\Dispatcher;
 use JTL\Plugin\Bootstrapper;
 use JTL\Shop;
-use Plugin\tc_bedarfsrechner\src\HookManager;
+use Plugin\tc_bedarfsrechner\src\FrontendController;
 
 class Bootstrap extends Bootstrapper
 {
@@ -18,22 +18,13 @@ class Bootstrap extends Bootstrapper
         }
 
         $config = $this->getPlugin()->getConfig();
-
         if ((string)$config->getValue('active') !== '1') {
             return;
         }
 
-        $dispatcher->listen('shop.hook.' . \HOOK_SMARTY_OUTPUTFILTER, function (): void {
-            if (Shop::getPageType() !== \PAGE_ARTIKEL) {
-                return;
-            }
-
-            try {
-                $manager = new HookManager($this->getPlugin());
-                $manager->render();
-            } catch (\Throwable $e) {
-                // In Version 0.2 bewusst still, damit der Shop nicht bricht.
-            }
+        $dispatcher->listen('shop.hook.' . \HOOK_SMARTY_OUTPUTFILTER, function (array $args): void {
+            $controller = new FrontendController($this->getPlugin());
+            $controller->handle($args);
         });
     }
 }

@@ -2,7 +2,7 @@
   "name": "teamcode/tc-bedarfsrechner",
   "description": "TC Bedarfsrechner fuer JTL-Shop 5",
   "type": "jtlshop-plugin",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "autoload": {
     "psr-4": {
       "Plugin\\tc_bedarfsrechner\\": ""

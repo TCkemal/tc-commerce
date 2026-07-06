@@ -1,7 +1,7 @@
 # TC Bedarfsrechner
 
-## Version 0.2.0
+## Version 0.2.1
 
-- Frontend-Ausgabe vorbereitet
-- Template, CSS und JavaScript hinzugefuegt
-- Erste Ausgabe auf Artikeldetailseite
+- FrontendController hinzugefuegt
+- Ausgabe per HOOK_SMARTY_OUTPUTFILTER / phpQuery
+- CSS und JavaScript werden auf der Artikeldetailseite geladen
