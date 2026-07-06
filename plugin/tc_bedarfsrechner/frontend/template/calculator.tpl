@@ -1,5 +1,7 @@
-<div class="tc-calculator" data-tc-bedarf="1">
-
+<div class="tc-calculator" 
+     data-tc-bedarf="1">
+     data-package-size="{$Artikel->fVPEWert|default:0}"
+     data-package-price="{$Artikel->Preise->fVK[0]|default:0}">
     <div class="tc-calculator__box">
 
         <h4>📐 TC Bedarfsrechner</h4>

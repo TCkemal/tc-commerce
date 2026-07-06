@@ -12,8 +12,15 @@ document.addEventListener("DOMContentLoaded", () => {
      * Diese Werte kommen in Version 0.4 automatisch aus PHP/JTL.
      * Für den ersten Test verwenden wir feste Werte.
      */
-    const packageSize = 2.525;
-    const packagePrice = 70.45;
+	const calculator = document.querySelector('[data-tc-bedarf="1"]');
+
+	const packageSize = parseFloat(
+    	calculator.dataset.packageSize.replace(",", ".")
+	);
+
+	const packagePrice = parseFloat(
+    	calculator.dataset.packagePrice.replace(",", ".")
+	);
 
     function calculate() {
 
